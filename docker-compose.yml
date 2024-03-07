@@ -1,7 +1,7 @@
 services:
   webhook:
     env_file:
-      - .env
+      - stack.env
     build:
       platforms:
       - 'linux/amd64'
@@ -21,7 +21,7 @@ services:
     restart: unless-stopped
   hosted:
     env_file:
-      - .env
+      - stack.env
     build:
       platforms:
       - 'linux/amd64'
